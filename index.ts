@@ -23,7 +23,10 @@ console.log("Taşak Ağırlığı : "+tasak)
 console.log("Toplam Karizma Değeri: "+sum)
 
 // data type inferred as  number 
-var num = 2;    
-console.log("value of num "+num); 
-num = "12";
+var num : number = 2;    
+console.log("değer "+num); 
+num = 12;
 console.log(num);
+
+
+
