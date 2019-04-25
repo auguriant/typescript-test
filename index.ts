@@ -39,3 +39,46 @@ while(i<=10) {
 }  //outputs 5 and exits the loop
 
 
+
+//function
+
+function disp_details(id:number,name:string,mail_id?:string) { 
+   console.log("ID:", id); 
+   console.log("İsim:",name); 
+   
+   if(mail_id!=undefined)  
+   console.log("Email",mail_id); 
+}
+disp_details(123,"hele hele");
+disp_details(111,"holo holo","meme@sex.com");
+
+
+
+//rest paramaters
+
+
+function addNumbers(...nums:number[]) {  
+   var i;   
+   var sum:number = 0; 
+   
+   for(i = 0;i<nums.length;i++) { 
+      sum = sum + nums[i]; 
+   } 
+   console.log("toplam",sum) 
+} 
+addNumbers(1,2,3,4,5) 
+addNumbers(10,10,10,10,10,8)
+
+
+//default parameters
+
+function calculate_discount(price:number,rate:number = 0.50) { 
+  
+   var discount = price * rate; 
+   console.log("İndirim: ",discount); 
+
+} 
+
+calculate_discount(1000) 
+calculate_discount(1000,0.30)
+
