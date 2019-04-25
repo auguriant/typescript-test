@@ -28,5 +28,14 @@ console.log("değer "+num);
 num = 12;
 console.log(num);
 
+// flow
+var i:number = 1 
+while(i<=10) { 
+   if (i % 6 == 0) {   
+      console.log ("The first multiple of 6  between 1 and 10 is : "+i) 
+      break     //exit the loop if the first multiple is found 
+   } 
+   i++ 
+}  //outputs 5 and exits the loop
 
 
