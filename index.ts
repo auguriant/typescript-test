@@ -82,3 +82,53 @@ function calculate_discount(price:number,rate:number = 0.50) {
 calculate_discount(1000) 
 calculate_discount(1000,0.30)
 
+
+//lambda statement
+
+var helehele = (x:number)=> {    
+   x = 10 + x 
+   console.log(x)  
+} 
+helehele(100)
+
+
+// Syntactic Variations
+
+var func = (x)=> { 
+   if(typeof x=="number") { 
+      console.log(x+" numerik") 
+   } else if(typeof x=="string") { 
+      console.log(x+" yazi") 
+   }  
+} 
+func(23123) 
+func("hele minnoş")
+func(31)
+
+
+//Function Overload
+
+
+function disp(s1:string):void; 
+function disp(n1:number,s1:string):void; 
+
+function disp(x:any,y?:any):void { 
+   console.log(x); 
+   console.log(y); 
+} 
+disp("abc")
+disp(1,"xyz");
+
+
+
+// Tuple Operations
+
+var mytuple = [10,"hele hele","minnoş","minnok"]; 
+console.log("Push oncesi itemler "+mytuple.length)    // returns the tuple size 
+
+mytuple.push(12)                                    // append value to the tuple 
+console.log("Push sonrası itemler "+mytuple.length) 
+console.log("poptanonce itemler "+mytuple.length) 
+console.log(mytuple.pop()+" tuple tarafınadan poplanan") // removes and returns the last item
+  
+console.log("pop sonrası itemler"+mytuple.length)
