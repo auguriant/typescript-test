@@ -132,3 +132,5 @@ console.log("poptanonce itemler "+mytuple.length)
 console.log(mytuple.pop()+" tuple tarafınadan poplanan") // removes and returns the last item
   
 console.log("pop sonrası itemler"+mytuple.length)
+
+
